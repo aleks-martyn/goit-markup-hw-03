@@ -47,9 +47,16 @@ body {margin: 0;
 .logo-link {
   color: var(--accent-color);
 }
-.list {
+.list {padding: 0;
+  margin: 0;
   list-style: none;
 }
+
+.page-header {border: 1px solid #ECECEC;}
+.container {margin-left: auto;
+margin-right: auto;
+width: 1600px;
+outline: 2px solid tomato;}
 
 /*---site nav---*/
 .site-nav .link {
@@ -71,21 +78,23 @@ body {margin: 0;
 }
 
 /*---hero---*/
-.hero-title {
+.hero-title {margin-top: 0;
+  margin-bottom: 30px;
   color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
 }
 .hero {
   background-color: var(--secondary-background-color);
+  text-align: center;
+  outline: 2px solid red;
 }
 
 /*---section---*/
-.section-title {
+.section-title {margin-top: 0;
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
