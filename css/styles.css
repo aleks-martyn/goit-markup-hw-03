@@ -62,7 +62,12 @@ width: 1200px;
 outline: 2px solid tomato;}
 
 /*---site nav---*/
+.site-nav {display: flex;}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;}
+
 .site-nav .link {
+  display: block;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -79,6 +84,9 @@ outline: 2px solid tomato;}
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+.contacts {display: flex;}
+.contacts .item + .item {margin-left: 50px;}
 
 /*---hero---*/
 .hero-title {margin-top: 0;
@@ -143,7 +151,7 @@ padding-bottom: 94px;}
 }
 
 .card {margin-bottom: 30px;}
-.item {padding-bottom: 30px;}
+.team .item {padding-bottom: 30px;}
 
 .team-title {margin-top: 0;
   margin-bottom: 10px;
@@ -226,15 +234,19 @@ padding-bottom: 94px;}
 
 /*---filter---*/
 .portfolio-filter .button {
-  font-family: inherit;
+  min-width: 73px;
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-}
-.portfolio-filter .button {
   color: var(--title-text-color);
+  background-color: var(--ashen-background-color);
 }
+
 .portfolio-filter .button:hover,
 .portfolio-filter .button:focus {
   color: var(--white-color);
@@ -245,7 +257,12 @@ padding-bottom: 94px;}
 .portfolio-link {
   text-decoration: none;
 }
-.portfolio-subtitle {
+
+.portfolio-item {padding-bottom: 20px;}
+.portfolio-card {margin-bottom: 20px;}
+
+.portfolio-subtitle {margin-top: 0;
+  margin-bottom: 4px;
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
