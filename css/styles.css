@@ -143,7 +143,8 @@ padding-bottom: 94px;}
   }
 
 /*---features---*/
-.feature.list {display: flex;}
+.feature.list {display: flex;
+gap: 30px;}
 
 .feature .title {margin-top: 0;
   margin-bottom: 10px;
@@ -151,13 +152,22 @@ padding-bottom: 94px;}
   font-size: 14px;
   line-height: 1.14;
 }
-.feature-text {margin-top: 0;
+.feature-text {max-width: 270px;
+  margin-top: 0;
   margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
 }
 
+/*---works---*/
+.works-list {display: flex;
+gap: 30px;}
+img {display: block;}
+
 /*---team---*/
+.team.list {display: flex;
+gap: 30px;}
+
 .team-section {
   background-color: var(--ashen-background-color);
 }
