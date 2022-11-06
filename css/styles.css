@@ -168,7 +168,10 @@ gap: 30px;}
 /*---works---*/
 .works-list {display: flex;
 gap: 30px;}
-img {display: block;}
+
+img {display: block;
+max-width: 100%;
+height: auto;}
 
 /*---team---*/
 .team.list {display: flex;
@@ -280,7 +283,13 @@ padding-bottom: 60px;}
 }
 
 /*---filter---*/
-.portfolio-filter {display: flex;}
+.portfolio-filter {display: flex;
+margin-bottom: 50px;
+justify-content: center;}
+
+.portfolio-filter .item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .portfolio-filter .button {
   min-width: 73px;
@@ -308,12 +317,15 @@ padding-bottom: 60px;}
 flex-wrap: wrap;
 gap: 30px;}
 
+.portfolio-title-text {padding: 20px 24px;
+border-right: 1px solid var(--cards-border-color);
+border-bottom: 1px solid var(--cards-border-color);
+border-left: 1px solid var(--cards-border-color);
+}
+
 .portfolio-link {
   text-decoration: none;
 }
-
-.portfolio-item {padding-bottom: 20px;}
-.portfolio-card {margin-bottom: 20px;}
 
 .portfolio-subtitle {margin-top: 0;
   margin-bottom: 4px;
