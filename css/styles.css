@@ -287,11 +287,6 @@ img {
 }
 
 /*---footer---*/
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .address .item:not(:first-child) {
   margin-top: 9px;
 }
@@ -304,6 +299,8 @@ img {
   line-height: 1.71;
 }
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--secondary-background-color);
 }
 .logo-footer {
