@@ -20,14 +20,6 @@
   --button-active-color: #188ce8;
 }
 
-h1,
-h2,
-h3,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -36,8 +28,23 @@ body {
   background-color: var(--white-color);
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 a {
+  font-size: 14px;
   text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 img {
@@ -60,11 +67,21 @@ ul {
 
 .header-container {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
+/* ---navigation--- */
+
+.site-nav {
+  display: flex;
+  gap: 93px;
+}
+
+/* ---logo--- */
+
 .logo {
-  display: block;
+  display: inline-block;
+  align-self: center;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -84,46 +101,29 @@ ul {
   color: var(--accent-color);
 }
 
-.site-nav + .contacts {
-  margin-left: 344px;
-}
-
-.site-nav {
-  display: flex;
-  align-items: center;
-}
-
-.logo-header + .nav-list {
-  margin-left: 93px;
-}
-
 /*---nav-list---*/
 
 .nav-list {
   display: flex;
+  gap: 50px;
 }
 
-.nav-list .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav-list .link {
-  display: block;
+.nav-link {
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--title-text-color);
 }
 
-.nav-list .link:hover,
-.nav-list .link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 
-.nav-list .link.current {
+.nav-link.current {
   color: var(--accent-color);
 }
 
@@ -131,15 +131,22 @@ ul {
 
 .contacts {
   display: flex;
-}
-
-.contacts .item + .item {
-  margin-left: 50px;
+  gap: 50px;
 }
 
 .contacts .link {
+  display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
 }
 
 /*---hero---*/
@@ -272,12 +279,6 @@ ul {
 
 /*---buttons---*/
 
-.contacts .button {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
 .button.primary {
   display: block;
   color: var(--primary-text-color);
@@ -297,9 +298,7 @@ ul {
   text-align: center;
   color: var(--white-color);
   background-color: var(--accent-color);
-  font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
@@ -374,7 +373,6 @@ ul {
   border-radius: 4px;
   text-align: center;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -400,10 +398,6 @@ ul {
   border-right: 1px solid var(--cards-border-color);
   border-bottom: 1px solid var(--cards-border-color);
   border-left: 1px solid var(--cards-border-color);
-}
-
-.portfolio-link {
-  text-decoration: none;
 }
 
 .portfolio-subtitle {
