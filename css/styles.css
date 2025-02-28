@@ -212,12 +212,12 @@ ul {
   overflow: hidden;
 }
 
-/*---features---*/
-
-.features {
+.list {
   display: flex;
   gap: 30px;
 }
+
+/*---features---*/
 
 .feature-subtitle {
   margin-bottom: 10px;
@@ -238,23 +238,13 @@ ul {
   padding-top: 0;
 }
 
-.work-list {
-  display: flex;
-  gap: 30px;
-}
-
 /*---team---*/
 
 .team-section {
   background-color: var(--ashen-background-color);
 }
 
-.team-list {
-  display: flex;
-  gap: 30px;
-}
-
-.team-list > .item {
+.team-card {
   border-right: 1px solid var(--header-border-color);
   border-bottom: 1px solid var(--header-border-color);
   border-left: 1px solid var(--header-border-color);
@@ -364,12 +354,10 @@ ul {
 /*---portfolio-list---*/
 
 .portfolio-list {
-  display: flex;
   flex-wrap: wrap;
-  gap: 30px;
 }
 
-.portfolio-title-text {
+.portfolio-inner-wrap {
   padding: 20px 24px;
   border-right: 1px solid var(--cards-border-color);
   border-bottom: 1px solid var(--cards-border-color);
