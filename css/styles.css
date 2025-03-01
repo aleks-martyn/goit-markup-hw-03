@@ -1,11 +1,11 @@
-/*---Колір основного тексту #757575---*/
-/*---Колір тексту заголовків #212121---*/
-/*---Вторинний колір тексту rgba(255, 255, 255, 0.6)---*/
-/*---Black color logo #000000---*/
-/*---Accent color #2196F3---*/
-/*---Первинний колір фону #FFFFFF---*/
-/*---Вторинний колір фону #2F303A---*/
-/*---Попелястий колір фону #F5F4FA---*/
+/* ---Колір основного тексту #757575--- */
+/* ---Колір тексту заголовків #212121--- */
+/* ---Вторинний колір тексту rgba(255, 255, 255, 0.6)--- */
+/* ---Black color logo #000000--- */
+/* ---Accent color #2196F3--- */
+/* ---Первинний колір фону #FFFFFF--- */
+/* ---Вторинний колір фону #2F303A--- */
+/* ---Попелястий колір фону #F5F4FA--- */
 
 :root {
   --primary-text-color: #757575;
@@ -13,7 +13,7 @@
   --accent-color: #2196f3;
   --white-color: #ffffff;
   --secondary-background-color: #2f303a;
-  --secondary-text-color: rgba(255, 255, 255, 0.6);
+  --secondary-text-color: rgb(255 255 255 / 0.6);
   --ashen-background-color: #f5f4fa;
   --header-border-color: #ececec;
   --cards-border-color: #eeeeee;
@@ -59,7 +59,7 @@ ul {
   list-style: none;
 }
 
-/*---header---*/
+/* ---header--- */
 
 .page-header {
   border-bottom: 1px solid var(--header-border-color);
@@ -74,6 +74,7 @@ ul {
 
 .site-nav {
   display: flex;
+  align-items: center;
   gap: 93px;
 }
 
@@ -81,7 +82,6 @@ ul {
 
 .logo {
   display: inline-block;
-  align-self: center;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -101,7 +101,7 @@ ul {
   color: var(--accent-color);
 }
 
-/*---nav-list---*/
+/* ---nav-list--- */
 
 .nav-list {
   display: flex;
@@ -140,7 +140,7 @@ ul {
   color: var(--primary-text-color);
 }
 
-/*---hero---*/
+/* ---hero--- */
 
 .hero {
   padding-top: 200px;
@@ -176,7 +176,7 @@ ul {
   background-color: var(--button-active-color);
 }
 
-/*---section---*/
+/* ---section--- */
 
 .section {
   padding-top: 94px;
@@ -217,7 +217,11 @@ ul {
   gap: 30px;
 }
 
-/*---features---*/
+/* ---features--- */
+
+.feature-item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+}
 
 .feature-subtitle {
   margin-bottom: 10px;
@@ -227,18 +231,17 @@ ul {
 }
 
 .feature-text {
-  width: 270px;
   font-size: 14px;
   line-height: 1.71;
 }
 
-/*---works---*/
+/* ---works--- */
 
 .work-section {
   padding-top: 0;
 }
 
-/*---team---*/
+/* ---team--- */
 
 .team-section {
   background-color: var(--ashen-background-color);
@@ -272,7 +275,7 @@ ul {
   line-height: 1.19;
 }
 
-/*---footer---*/
+/* ---footer--- */
 
 .page-footer {
   padding-top: 60px;
@@ -318,13 +321,13 @@ ul {
   color: var(--accent-color);
 }
 
-/*--------------Portfolio-----------------*/
+/* --------------Portfolio----------------- */
 
 .portfolio-title {
   color: var(--title-text-color);
 }
 
-/*---filter---*/
+/* ---filter--- */
 
 .portfolio-filter {
   display: flex;
@@ -351,7 +354,7 @@ ul {
   background-color: var(--accent-color);
 }
 
-/*---portfolio-list---*/
+/* ---portfolio-list--- */
 
 .portfolio-list {
   flex-wrap: wrap;
