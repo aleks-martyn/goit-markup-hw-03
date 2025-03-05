@@ -5,7 +5,7 @@
 /* ---Первинний колір фону #FFFFFF--- */
 /* ---Вторинний колір фону #2F303A--- */
 /* ---Додатковий колір фону #F5F4FA--- */
-/* ---Колір межі хедеру #ececec--- */
+/* ---Колір межі хедеру і картки члена команди #ececec--- */
 /* ---Колір межі картки портфоліо #eeeeee--- */
 /* ---Колір фону активної кнопки #188ce8--- */
 
@@ -17,13 +17,12 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #2f303a;
   --additional-bg-color: #f5f4fa;
-  --header-border-color: #ececec;
-  --card-border-color: #eeeeee;
+  --primary-border-color: #ececec;
+  --secondary-border-color: #eeeeee;
   --button-active-color: #188ce8;
 }
 
 body {
-  margin: 0;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -64,7 +63,7 @@ ul {
 /* ---header--- */
 
 .page-header {
-  border-bottom: 1px solid var(--header-border-color);
+  border-bottom: 1px solid var(--primary-border-color);
 }
 
 .header-container {
@@ -250,9 +249,9 @@ ul {
 }
 
 .team-card {
-  border-right: 1px solid var(--header-border-color);
-  border-bottom: 1px solid var(--header-border-color);
-  border-left: 1px solid var(--header-border-color);
+  border-right: 1px solid var(--primary-border-color);
+  border-bottom: 1px solid var(--primary-border-color);
+  border-left: 1px solid var(--primary-border-color);
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
@@ -325,20 +324,13 @@ ul {
 
 /* --------------Portfolio----------------- */
 
-.portfolio-title {
-  color: var(--title-text-color);
-}
-
 /* ---filter--- */
 
 .portfolio-filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.portfolio-filter .item:not(:last-child) {
-  margin-right: 8px;
+  gap: 8px;
 }
 
 .portfolio-filter .button {
@@ -364,9 +356,9 @@ ul {
 
 .portfolio-inner-wrap {
   padding: 20px 24px;
-  border-right: 1px solid var(--card-border-color);
-  border-bottom: 1px solid var(--card-border-color);
-  border-left: 1px solid var(--card-border-color);
+  border-right: 1px solid var(--secondary-border-color);
+  border-bottom: 1px solid var(--secondary-border-color);
+  border-left: 1px solid var(--secondary-border-color);
 }
 
 .portfolio-subtitle {
@@ -378,7 +370,6 @@ ul {
 }
 
 .portfolio-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
