@@ -329,8 +329,8 @@ ul {
 .portfolio-filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .portfolio-filter .button {
