@@ -89,12 +89,12 @@ ul {
   line-height: 1.19;
 }
 
-.logo-header {
+.header-logo {
   color: var(--title-text-color);
 }
 
-.logo-header:hover,
-.logo-header:focus {
+.header-logo:hover,
+.header-logo:focus {
   color: var(--accent-color);
 }
 
@@ -124,7 +124,7 @@ ul {
   color: var(--accent-color);
 }
 
-.nav-link {
+.link.nav-link {
   color: var(--title-text-color);
 }
 
@@ -184,6 +184,14 @@ ul {
   padding-bottom: 94px;
 }
 
+.section.colored {
+  background-color: var(--additional-bg-color);
+}
+
+.section.no-padding {
+  padding-top: 0;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -236,17 +244,7 @@ ul {
   line-height: 1.71;
 }
 
-/* ---works--- */
-
-.work-section {
-  padding-top: 0;
-}
-
 /* ---team--- */
-
-.team-section {
-  background-color: var(--additional-bg-color);
-}
 
 .team-card {
   border-right: 1px solid var(--primary-border-color);
@@ -284,13 +282,13 @@ ul {
   background-color: var(--secondary-bg-color);
 }
 
-.logo-footer {
+.footer-logo {
   margin-bottom: 20px;
   color: var(--primary-bg-color);
 }
 
-.logo-footer:hover,
-.logo-footer:focus {
+.footer-logo:hover,
+.footer-logo:focus {
   color: var(--accent-color);
 }
 
