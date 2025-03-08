@@ -82,7 +82,6 @@ ul {
 /* ---logo--- */
 
 .logo {
-  display: inline-block;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -90,6 +89,7 @@ ul {
 }
 
 .header-logo {
+  display: block;
   color: var(--title-text-color);
 }
 
@@ -109,8 +109,8 @@ ul {
   gap: 50px;
 }
 
-.link {
-  display: inline-block;
+.page-header .header-link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -119,12 +119,12 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.page-header .link:hover,
-.page-header .link:focus {
+.page-header .header-link:hover,
+.page-header .header-link:focus {
   color: var(--accent-color);
 }
 
-.link.nav-link {
+.header-link.nav-link {
   color: var(--title-text-color);
 }
 
@@ -137,7 +137,7 @@ ul {
   gap: 50px;
 }
 
-.contacts .link {
+.contacts .header-link {
   color: var(--primary-text-color);
 }
 
@@ -221,12 +221,12 @@ ul {
   overflow: hidden;
 }
 
-.list {
+/* ---features--- */
+
+.features {
   display: flex;
   gap: 30px;
 }
-
-/* ---features--- */
 
 .feature-item {
   flex-basis: calc((100% - 3 * 30px) / 4);
@@ -244,7 +244,19 @@ ul {
   line-height: 1.71;
 }
 
+/* ---works--- */
+
+.works {
+  display: flex;
+  gap: 30px;
+}
+
 /* ---team--- */
+
+.team-list {
+  display: flex;
+  gap: 30px;
+}
 
 .team-card {
   border-right: 1px solid var(--primary-border-color);
@@ -283,6 +295,7 @@ ul {
 }
 
 .footer-logo {
+  display: inline-block;
   margin-bottom: 20px;
   color: var(--primary-bg-color);
 }
@@ -302,21 +315,21 @@ ul {
   margin-bottom: 9px;
 }
 
-.address-list .link {
-  padding-top: 0;
-  padding-bottom: 0;
+.footer-link {
+  display: inline-block;
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-.address-list .address-link {
+.footer-link.colored {
   color: var(--primary-bg-color);
 }
 
-.address-list .link:hover,
-.address-list .link:focus {
+.footer-link:hover,
+.footer-link:focus {
   color: var(--accent-color);
 }
 
@@ -349,7 +362,9 @@ ul {
 /* ---portfolio-list--- */
 
 .portfolio-list {
+  display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .portfolio-inner-wrap {
