@@ -154,7 +154,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 696px;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -367,7 +367,7 @@ ul {
   gap: 30px;
 }
 
-.portfolio-inner-wrap {
+.portfolio-content {
   padding: 20px 24px;
   border-right: 1px solid var(--secondary-border-color);
   border-bottom: 1px solid var(--secondary-border-color);
