@@ -90,6 +90,8 @@ ul {
 
 .header-logo {
   display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--title-text-color);
 }
 
